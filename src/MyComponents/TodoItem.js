@@ -1,16 +1,14 @@
 import React from 'react'
 
 
-export const TodoItem = (props) => {
+export const TodoItem = ({todo, onDelete}) => {
   return (
     <div>
-      {props.todo.map(element => 
-        <div key={element.sno}>
-          <h4>{element.title}</h4>
-          <p>{element.desc}</p>
-        </div>
-      )}
-    </div>
+     
+          <h4>{todo.title}</h4>
+          <p>{todo.desc}</p>
+          <booton className="btn btn-sm  btn-danger" onClick={()=>{onDelete(todo)}}>Click for Delete</booton>
+          </div>
   )
 }
 
