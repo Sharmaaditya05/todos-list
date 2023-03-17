@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.foot{
+  position: fixed;
+  width: 100%;
+  bottom: -10px;
+}
+
+.head{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: black;
+}
